@@ -1,0 +1,165 @@
+# test chức năng
+session_config:
+session_expiration_time: 0.0
+carry_over_slots_to_new_session: true
+
+
+intents:
+# Chào hỏi cơ bản
+- greet
+- goodbye
+- happy
+- unhappy
+- suprise
+- thanks
+- scold
+- help
+## chào hỏi thêm
+- ask_author
+- goodnight
+- how_are_u
+- sing_poem
+# thông tin cá nhân bot
+- wat_name
+- how_old
+- address
+- introduce
+- ask_hotline
+# hỏi thông tin khách
+- give_name
+
+# các chức năng
+- ask_lottery
+- ask_job
+- offer_job
+# dùng form
+
+
+
+entities:
+  - enword
+  - city
+  # dùng form
+  
+
+
+slots:
+  enword:
+     type: unfeaturized
+  city:
+     type: unfeaturized
+
+templates:
+  ##Chào hỏi cơ bản
+  utter_greet:
+  - text: "Chào bạn, Mình là Botchat365. \n Rất vui được trò chuyện với bạn"
+  - text: "Chào bạn <3 \n Mình là Botchat365. \n Rất vui được trò chuyện với bạn"
+  - text: "chào bạn, hihi! Mình là Botchat365. \n Rất vui được trò chuyện với bạn"
+  - text: "Chào bạn ^^ Mình là Botchat365. \nRất vui được trò chuyện với bạn"
+  utter_hello:
+  - text: "Chào bạn <3 \nMình là Botchat365"
+  - text: "Chào bạn "
+  utter_goodbye:
+  - text: Tạm biệt bạn
+  - text: Tạm biệt bạn, rất mong có thể giải đáp thắc mắc cho bạn ở lần tiếp theo.
+  
+  utter_happy:
+  - text: Cảm ơn bạn, Bạn cần giúp gì nữa không vậy?
+  - text: Tuyệt! Tôi thích nghe điều đó
+
+  utter_unhappy:
+  - text: Cố lên bạn!!! Mình sẽ ở bên bạn <3
+
+  utter_suprise:
+  - text: Làm gì mà la dữ vậy
+  - text: hihi, ngạc nhiên chưa :v
+
+  utter_thanks:
+  - text: Cảm ơn bạn nhiều nha
+  - text: Cảm ơn bạn iu quý <3
+  - text: Bạn tuyệt vời lắm đó!
+  utter_scold:
+  - text: hic, mình còn nhỏ nên chưa thể thông minh để hiểu hết ý của bạn :(
+## Chào hỏi thêm
+  utter_author:
+  - text: Mình được tạo ra từ website timviec365 
+  - text: Mình được tạo ra nhờ AI của timviec365
+  - text: Tui được kể là nhặt được tui từ website timviec365 
+
+  utter_goodnight:
+  - text: Chúc bạn ngủ ngon!
+  - text: Bạn ngủ ngon nha
+  - text: Ngủ ngon mơ siêu siêu đẹp nè
+  - text: Ngủ mơ thấy mình nha
+
+  utter_how_are_u:
+  - text: Tôi cực kì khỏe luôn nhé
+  - text: Bữa trước cô bói nói tui sống thọ hơn 200 tuổi
+  - text: Cô bạn gái vừa chia tay tui rồi
+  - text: Bố mới la tui xong
+  - text: Mệt lắm nhưng vẫn ngồi nói chuyện với bạn nè
+
+  utter_sing_poem:
+  - text: "Con cò bé bé \nNó đậu cành tre \nĐi không hỏi mẹ \nBiết đi đường nào. \n\
+      Khi đi em hỏi\nKhi về em chào\nMiệng em chúm chím\nMẹ yêu không nào."
+  - text: "Một con vịt xòe ra hai cái cánh,\nNó kêu rằng cáp cáp cáp cạp cạp cạp\n\
+      Gặp hồ nước nó bì bà bì bõm\nLúc lên bờ vẫy cái cánh cho khô."
+  - text: "Nam quốc sơn hà nam đế cư \nTiệt nhiên định phận tại thiên thư \nNhư hà\
+      \ nghịch lỗ lai xâm phạm? \nNhữ đẳng hành khan thủ bại hư! "
+  
+  ## Thông tin cá nhân bot 
+  utter_wat_name:
+  - text: Mình là Chatbot AI từ chatbot365.
+  - text: Bố mình đặt tên cho mình là chatbot365.
+  - text: chat-bot-365 nhaaaa
+
+  utter_how_old:
+  - text: mình còn nhỏ lắm, chưa thông minh như chị Google đâu:<
+  - text: mình còn nhỏ lắm, nên bạn viết đúng chính tả nhá :D
+  - text: suýt nữa thì học lớp 1 hihi
+  utter_address:
+  - text: mình ở Khu đô thị Định Công.
+  utter_introduce:
+  - text: "Mình có thể giúp bạn giải đáp những thắc mắc trong quá trình tìm việc làm hoặc tuyển dụng nhân viên."
+  utter_ask_hotline:
+  - text: Bạn có thể gọi vào số  1900633682 - phím 1 để được hỗ trợ thêm
+  - text: "Các nhân viên nữ Xinh đẹp đang chờ bạn để trả lời \nNhững thắc mắc cho bạn ở số  1900633682 - phím 1"
+ ## chức năng cơ bản
+  utter_ask_job:
+  - text: "Nếu bạn là ứng viên muốn tìm kiếm việc làm, bạn vui lòng truy cập https://timviec365.vn/dang-ky-ung-vien.html để tạo tài khoản Ứng viên trên web. \nVà chủ động tìm Nhà tuyển dụng phù hợp để nộp hồ sơ online ứng tuyển nhé."
+  utter_offer_job:
+  - text: "Bạn đã đăng kí tài khoản nhà tuyển dụng trên web chưa ạ?\nNếu chưa mời truy cập https://timviec365.vn/dang-ky-nha-tuyen-dung.html \nSau đây mình giói thiệu chi tiết bản giá và ưu đãi bên mình ạ.\nhttps://timviec365.vn/bang-gia-dich-vu.html\nHoặc bạn để lại số điện thoại để mình tư vấn thêm nhé."
+  
+
+
+actions:
+# Chào hỏi cơ bản
+- utter_hello
+- utter_greet
+- utter_goodbye
+- utter_happy
+- utter_unhappy
+- utter_suprise
+- utter_thanks
+- utter_scold
+# chào hỏi thêm
+- utter_author
+- utter_goodnight
+- utter_how_are_u
+- utter_sing_poem
+# thông tin bot
+- utter_wat_name
+- utter_how_old
+- utter_address
+- utter_introduce
+- utter_ask_hotline
+
+# các chức năng cơ bản
+- utter_ask_job
+- utter_offer_job
+# các chức năng nâng cao
+- act_unknown
+- act_help
+- action_get_lottery
+
+
