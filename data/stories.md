@@ -63,7 +63,7 @@
 
 ## introduce
 * introduce
-  - utter_introduce
+  - act_help
 
 <!-- chức năng ngoài lề -->
 ## hỏi số đề
@@ -72,16 +72,27 @@
 
 ## hỏi việc làm
 * ask_job
-  - utter_hello
-  - utter_ask_job
+  - action_job
 
 ## nhà tuyển dụng hỏi
 * offer_job
-  - utter_hello
-  - utter_offer_job
-
+  - action_offer_job
 
 ## help
 * help
   - act_help
 
+## cv
+*cv
+  - action_cv
+## edit_cv
+*edit_cv
+  -utter_edit_cv
+
+## tao ho so
+*hoso
+  -utter_hoso
+
+## taikhoan
+*taikhoan
+  -action_taikhoan

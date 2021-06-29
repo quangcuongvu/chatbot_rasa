@@ -12,12 +12,28 @@
 - chào bạn
 - chào mày
 - chào
+- helo
+- hê lo
+- alo
+- có ai ở đây không
+- xin chao
+
 ## intent:goodbye
 - tạm biệt
 - hẹn gặp lại
 - gặp lại sau
 - lúc khác gặp lại
+- bye
+- bye bye
+- bai bai
+
 ## intent: happy
+- ok
+- oke
+- hihi
+- hehe
+- OK
+- Ok
 - tuyệt vời
 - rất tốt
 - tuyệt
@@ -41,6 +57,8 @@
 - cực kỳ buồn
 - tôi buồn
 - huhu
+- khoc
+- hic
 ## intent:suprise
 - ôi trời
 - trời ơi
@@ -52,6 +70,7 @@
 - cảm ơn nha
 - cảm ơn
 - cảm ơn rất nhiều
+- cam on
 
 ## intent:scold
 - khùng quá
@@ -63,7 +82,11 @@
 - bạn bị ngu hả
 - thần kinh
 - ngáo quá
-
+- gà vl
+- vl
+- dot
+- dốt 
+- ngu 
 ## intent:help
 - cần giúp đỡ
 - giúp tôi với
@@ -72,6 +95,9 @@
 - help me
 - trợ giúp
 - cần trợ giúp
+- can giup do
+- giup toi voi
+- tro giup
 
 <!-- chào hỏi thêm -->
 
@@ -88,6 +114,7 @@
 - chúc bạn ngủ ngon
 - ngủ ngon nha
 - ngủ ngon
+- ngu ngon
 
 ## intent:how_are_u
 - bạn có khỏe không
@@ -153,6 +180,9 @@
 - bạn sinh năm bao nhiêu
 - bạn học lớp mấy rồi
 - bạn học cấp mấy
+- tuổi
+- tuổi
+
 
 ## intent:address
 - nhà bạn ở đâu
@@ -209,6 +239,14 @@
 
 
 ## intent:ask_job
+- timviec
+- vieclam
+- timvieclam
+- tìm việc làm
+- tìm việc
+- tìm việc tại hà nội
+- tim viec 
+- tim viec lam 
 - Tôi muốn xin vào làm giám sát thi công
 - Mình muốn tìm việc làm tại nhà
 - Samsung h tuyển k a
@@ -234,5 +272,69 @@
 - xem thong tin ứng vien hoac đăng bài tuyển
 - Tôi muốn xem thông tin ứng viên
 - mình muốn liên hệ đăng ký gói đăng tin + xem thông tin ứng viên
+- muốn chat với ứng viên
+- uv
+- xem thong tin uv
+- sdt uv
+- thong tin uv
+- đăng bài tuyển dụng
+- tuyen dung nv
+- tuyen nv
+- tuyển nhân viên 
+- tuyen cong nhan
+- tuyen nhan vien ban hang
+- muốn gặp ứng viên
 
 
+## intent:cv
+- mình muốn tạo cv
+- tạo cv xin việc
+- mẫu cv xin việc
+- mẫu cv đẹp
+- muốn lưu cv
+- luu cv
+- lưu cv
+- dữ liệu thông tin vào CV 
+- dữ liệu cv 
+- lấy cv
+- CV mẫu
+## intent:edit_cv
+- sửa cv đã tạo
+- sửa cv
+- sửa cv đã lưu
+- sua cv
+- edit cv
+- tai cv
+- xoa cv
+- tải cv về máy
+- xóa cv đã lưu
+- xóa cv
+- download cv
+## intent:hoso
+- hồ sơ xin việc
+- hồ sơ
+- ho so 
+- ho so xin viec
+- tao ho so
+- chinh sua ho so
+- tai ho so
+
+## intent:taikhoan
+- đăng ký tài khoản
+- đăng ký 
+- tạo tài khoản
+- tạo tk
+- dang ky
+- dang ki tk
+- dang ki 
+- dang nhap
+- dang nhap tk
+- đăng nhập
+- đăng nhập thế nào
+- đăng ký thế nào
+- đăng kí thế nào
+- cách đăng nhập
+- cách đăng kí
+- cách đăng ký
+- đăng nhập tài khoản
+- đăng nhập tk

@@ -32,9 +32,10 @@ intents:
 - ask_lottery
 - ask_job
 - offer_job
-# dùng form
-
-
+- cv
+- edit_cv
+- hoso
+- taikhoan
 
 entities:
   - enword
@@ -52,10 +53,10 @@ slots:
 templates:
   ##Chào hỏi cơ bản
   utter_greet:
-  - text: "Chào bạn, Mình là Botchat365. \n Rất vui được trò chuyện với bạn"
-  - text: "Chào bạn <3 \n Mình là Botchat365. \n Rất vui được trò chuyện với bạn"
-  - text: "chào bạn, hihi! Mình là Botchat365. \n Rất vui được trò chuyện với bạn"
-  - text: "Chào bạn ^^ Mình là Botchat365. \nRất vui được trò chuyện với bạn"
+  - text: "Chào bạn,Mình là Botchat365.\nRất vui được trò chuyện với bạn"
+  - text: "Chào bạn <3,\nMình là Botchat365. \nRất vui được trò chuyện với bạn"
+  - text: "chào bạn, hihi! \nMình là Botchat365. \nRất vui được trò chuyện với bạn"
+  - text: "Chào bạn ^^ \nMình là Botchat365.\nRất vui được trò chuyện với bạn"
   utter_hello:
   - text: "Chào bạn <3 \nMình là Botchat365"
   - text: "Chào bạn "
@@ -106,7 +107,6 @@ templates:
       Gặp hồ nước nó bì bà bì bõm\nLúc lên bờ vẫy cái cánh cho khô."
   - text: "Nam quốc sơn hà nam đế cư \nTiệt nhiên định phận tại thiên thư \nNhư hà\
       \ nghịch lỗ lai xâm phạm? \nNhữ đẳng hành khan thủ bại hư! "
-  
   ## Thông tin cá nhân bot 
   utter_wat_name:
   - text: Mình là Chatbot AI từ chatbot365.
@@ -124,14 +124,12 @@ templates:
   utter_ask_hotline:
   - text: Bạn có thể gọi vào số  1900633682 - phím 1 để được hỗ trợ thêm
   - text: "Các nhân viên nữ Xinh đẹp đang chờ bạn để trả lời \nNhững thắc mắc cho bạn ở số  1900633682 - phím 1"
+  utter_edit_cv:
+    - text: "Bạn đăng nhập vào timviec365 trên máy tính và click https://timviec365.vn/ung-vien/danh-sach-mau-cv để sửa,xóa hoặc tải cv.\nBạn có thể gọi vào số  1900633682 - phím 1 để được hỗ trợ thêm"
+
  ## chức năng cơ bản
-  utter_ask_job:
-  - text: "Nếu bạn là ứng viên muốn tìm kiếm việc làm, bạn vui lòng truy cập https://timviec365.vn/dang-ky-ung-vien.html để tạo tài khoản Ứng viên trên web. \nVà chủ động tìm Nhà tuyển dụng phù hợp để nộp hồ sơ online ứng tuyển nhé."
-  utter_offer_job:
-  - text: "Bạn đã đăng kí tài khoản nhà tuyển dụng trên web chưa ạ?\nNếu chưa mời truy cập https://timviec365.vn/dang-ky-nha-tuyen-dung.html \nSau đây mình giói thiệu chi tiết bản giá và ưu đãi bên mình ạ.\nhttps://timviec365.vn/bang-gia-dich-vu.html\nHoặc bạn để lại số điện thoại để mình tư vấn thêm nhé."
-  
-
-
+  utter_hoso:
+  - text: "Để tạo, chỉnh sửa hồ sơ bạn vui lòng đăng nhập và truy cập https://timviec365.vn/cv365/ \nTrong quá trình sử dụng, nếu gặp phát sinh lỗi vui lòng gọi số hotline 1900633682 - phím 1 để được tư vấn."
 actions:
 # Chào hỏi cơ bản
 - utter_hello
@@ -153,13 +151,15 @@ actions:
 - utter_address
 - utter_introduce
 - utter_ask_hotline
-
-# các chức năng cơ bản
-- utter_ask_job
-- utter_offer_job
+# chức năng nâng cao 
+- utter_hoso
 # các chức năng nâng cao
 - act_unknown
 - act_help
 - action_get_lottery
-
+- action_cv
+- utter_edit_cv
+- action_job
+- action_offer_job
+- action_taikhoan
 
